@@ -52,6 +52,9 @@
     (add-to-list 'load-path wrangler-path)
     (require 'wrangler)))
 
+(require 'edts)
+(require 'edts-start)
+
 (add-hook 'erlang-mode-hook (lambda ()
                               (setq erlang-compile-function 'projectile-compile-project)))
 
